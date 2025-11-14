@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PasswordRetry {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        String correctPassword = "1234";
+        String userPassword;
+
+        do {
+            System.out.print("Enter password: ");
+            userPassword = input.nextLine();
+
+            if (!userPassword.equals(correctPassword)) {
+                System.out.println("Incorrect password. Try again.\n");
+            }
+
+        } while (!userPassword.equals(correctPassword));
+
+        System.out.println("Access Granted!");
+    }
+}
