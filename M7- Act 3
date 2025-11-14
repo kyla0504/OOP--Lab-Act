@@ -1,0 +1,27 @@
+interface Message {
+    void showMessage();
+}
+
+class EnglishMessage implements Message {
+    @Override
+    public void showMessage() {
+        System.out.println("Hello! This is an English message.");
+    }
+}
+
+class SpanishMessage implements Message {
+    @Override
+    public void showMessage() {
+        System.out.println("¡Hola! Este es un mensaje en Español.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Message english = new EnglishMessage();
+        Message spanish = new SpanishMessage();
+
+        english.showMessage();  
+        spanish.showMessage();  
+    }
+}
