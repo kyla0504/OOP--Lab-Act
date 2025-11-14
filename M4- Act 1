@@ -1,0 +1,20 @@
+class Book {
+    String title;
+    String author;
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Create an object of Book class
+        Book myBook = new Book();
+
+        // Assign values to the attributes
+        myBook.title = "The Little Prince";
+        myBook.author = "Antoine de Saint-Exupéry";
+
+        // Display the book details
+        System.out.println("Book Title: " + myBook.title);
+        System.out.println("Author: " + myBook.author);
+    }
+}
