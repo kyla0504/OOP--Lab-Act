@@ -1,0 +1,16 @@
+public class CalculateAverage {
+    public static void main(String[] args) {
+ 
+        int[] numbers = {80, 90, 75, 85, 95};
+
+        int sum = 0;
+
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        double average = (double) sum / numbers.length;
+
+        System.out.println("The average is: " + average);
+    }
+}
