@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SumNaturalNumbers {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a positive number: ");
+        int limit = input.nextInt();
+
+        int sum = 0;
+        int count = 1;
+
+        while (count <= limit) {
+            sum += count;   // add the current number to sum
+            count++;        // move to the next number
+        }
+
+        System.out.println("The sum of natural numbers up to " + limit + " is: " + sum);
+    }
+}
